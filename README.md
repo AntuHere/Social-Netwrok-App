@@ -1,14 +1,14 @@
-### BackEnd
+# BackEnd
 
 1. npm init -y
-# install MongoDB
-# install Mongoose, Apollo Server, GraphQL on terminal
+### install MongoDB
+### install Mongoose, Apollo Server, GraphQL on terminal
 2. npm install apollo-server graphql mongoose
-# password-hashing
+### password-hashing
 3. npm install bcryptjs jsonwebtoken
 4. npm i -D nodemon
 
-### FrontEnd
+# FrontEnd
 
 1. npx create-react-app client
 2. cd client
