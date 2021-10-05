@@ -12,6 +12,7 @@ import MenuBar from './Components/MenuBar';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Profile from './Pages/Profile';
 import SinglePost from './Pages/SinglePost';
 
 function App() {
@@ -23,7 +24,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <AuthRoute exact path="/login" component={Login} />
           <AuthRoute exact path="/register" component={Register} />
+         
           <Route exact path="/posts/:postId" component={SinglePost} />
+          <Route exact path="/profile/:username" component={Profile} />
+
         </Container>
       </Router>
     </AuthProvider>

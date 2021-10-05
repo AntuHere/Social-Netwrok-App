@@ -13,12 +13,23 @@ function MenuBar(){
 
     const menuBar = user ? (
       <Menu pointing  size="massive" color="teal">
-        <Menu.Item
-          name={user.username}
+       <Menu.Item
+          name='my feed'
+          active={activeItem === 'my feed'}
+          onClick={handleItemClick}
           as={Link}
           to="/"
         />
+       
         <Menu.Menu position='right'>
+        
+         <Menu.Item
+          name={user.username}
+          active={activeItem === "user"}
+          as={Link}
+          to={`/profile/${user.username}`}
+          onClick={handleItemClick}
+        />
         <Menu.Item
           name='logout'
           active={activeItem === 'logout'}

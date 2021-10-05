@@ -36,15 +36,16 @@ function PostForm(props) {
     <>
       <Form onSubmit={onSubmit} className="form-container">
         <h2>Create a post:</h2>
-        <Form.Field>
+        <Form.Field required>
           <Form.Input
             placeholder="Hi World!"
             name="body"
             onChange={onChange}
             value={values.body}
             error={error ? true : false}
+            
           />
-          <Button type="submit" color="teal" style={{marginBottom: 20}} onClick={postDone}>
+          <Button type="submit" size='medium' color="teal" style={{marginBottom: 20}} onClick={postDone}>
             Submit
           </Button>
         </Form.Field>
