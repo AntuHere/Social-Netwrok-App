@@ -25,7 +25,7 @@ function MenuBar(){
         
          <Menu.Item
           name={user.username}
-          active={activeItem === "user"}
+          active={activeItem === user.username}
           as={Link}
           to={`/profile/${user.username}`}
           onClick={handleItemClick}

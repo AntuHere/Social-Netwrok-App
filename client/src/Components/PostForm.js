@@ -34,9 +34,9 @@ function PostForm(props) {
 
   return (
     <>
-      <Form onSubmit={onSubmit} className="form-container">
+      <Form onSubmit={onSubmit} className="form-container" required>
         <h2>Create a post:</h2>
-        <Form.Field required>
+        <Form.Field >
           <Form.Input
             placeholder="Hi World!"
             name="body"

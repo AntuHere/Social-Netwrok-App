@@ -24,9 +24,8 @@ function Profile() {
    
    postMarkup = (
     <Grid columns={1}>
+            <Grid.Row>
       
-      <Grid.Row>
-      <h2>Username: {user.username}</h2>
           <Transition.Group>
             {posts &&
               posts.map((post) => (
